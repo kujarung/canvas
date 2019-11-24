@@ -20,7 +20,8 @@ app.use('/', express.static(path.join(__dirname, 'public')) );
 app.use('/about', express.static(path.join(__dirname, 'public/html/about.html')) );
 app.use('/contact', express.static(path.join(__dirname, 'public/html/contact.html')) );
 app.use('/404', express.static(path.join(__dirname, 'public/html/404.html')) );
-
+app.use('/list', express.static(path.join(__dirname, 'public/html/list.html')) );
+app.use('/detail', express.static(path.join(__dirname, 'public/html/detail.html')) );
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
     next(createError(404));
